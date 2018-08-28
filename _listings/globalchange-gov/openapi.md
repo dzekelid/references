@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: GlobalChange.gov
 x-complete: 1
@@ -77,4 +76,19 @@ paths:
       tags:
       - References
       - Report
----
+  /reference/{reference_identifier}:
+    get:
+      summary: Get a representation of a reference.
+      description: Get JSON which represents the structure of a reference.
+      operationId: get-json-which-represents-the-structure-of-a-reference
+      x-api-path-slug: referencereference-identifier-get
+      parameters:
+      - in: path
+        name: reference_identifier
+        description: reference_identifier description
+      responses:
+        200:
+          description: OK
+      tags:
+      - Representation
+      - Reference
